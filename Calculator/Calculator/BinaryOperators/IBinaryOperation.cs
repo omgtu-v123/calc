@@ -1,6 +1,6 @@
 ﻿namespace Calculator.BinaryOperators
 {
-    interface IBinaryOperation
+    public interface IBinaryOperation
     {
         string Calculate(double first, double second);
     }
