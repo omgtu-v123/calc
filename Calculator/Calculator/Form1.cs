@@ -19,26 +19,26 @@ namespace Calculator
 
         private void Addition_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(FirstArgument.Text) + Convert.ToDouble(SecondArgument.Text);
-            ResultField.Text = Convert.ToString(result);
+            Additor additor = new Additor();
+            ResultField.Text = additor.Calculate(Convert.ToDouble(FirstArgument.Text), Convert.ToDouble(SecondArgument.Text));
         }
 
         private void Substraction_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(FirstArgument.Text) - Convert.ToDouble(SecondArgument.Text);
-            ResultField.Text = Convert.ToString(result);
+            Substructor substructor = new Substructor();
+            ResultField.Text = substructor.Calculate(Convert.ToDouble(FirstArgument.Text), Convert.ToDouble(SecondArgument.Text));
         }
 
         private void Multiplication_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(FirstArgument.Text) * Convert.ToDouble(SecondArgument.Text);
-            ResultField.Text = Convert.ToString(result);
+            Multiplicator multiplicator = new Multiplicator();
+            ResultField.Text = multiplicator.Calculate(Convert.ToDouble(FirstArgument.Text), Convert.ToDouble(SecondArgument.Text));
         }
 
         private void Division_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(FirstArgument.Text) / Convert.ToDouble(SecondArgument.Text);
-            ResultField.Text = Convert.ToString(result);
+            Divisioner divisioner = new Divisioner();
+            ResultField.Text = divisioner.Calculate(Convert.ToDouble(FirstArgument.Text), Convert.ToDouble(SecondArgument.Text));
         }
     }
 }
