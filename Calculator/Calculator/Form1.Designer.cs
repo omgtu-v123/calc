@@ -46,6 +46,10 @@
             this.Cosine = new System.Windows.Forms.Button();
             this.Tangent = new System.Windows.Forms.Button();
             this.Cotangent = new System.Windows.Forms.Button();
+            this.Arcsin = new System.Windows.Forms.Button();
+            this.Arccos = new System.Windows.Forms.Button();
+            this.Arctan = new System.Windows.Forms.Button();
+            this.Arcctg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -216,11 +220,55 @@
             this.Cotangent.UseVisualStyleBackColor = true;
             this.Cotangent.Click += new System.EventHandler(this.Cotangent_Click);
             // 
+            // Arcsin
+            // 
+            this.Arcsin.Location = new System.Drawing.Point(227, 140);
+            this.Arcsin.Name = "Arcsin";
+            this.Arcsin.Size = new System.Drawing.Size(45, 22);
+            this.Arcsin.TabIndex = 18;
+            this.Arcsin.Text = "Arcsin";
+            this.Arcsin.UseVisualStyleBackColor = true;
+            this.Arcsin.Click += new System.EventHandler(this.Arcsin_Click);
+            // 
+            // Arccos
+            // 
+            this.Arccos.Location = new System.Drawing.Point(227, 169);
+            this.Arccos.Name = "Arccos";
+            this.Arccos.Size = new System.Drawing.Size(45, 23);
+            this.Arccos.TabIndex = 19;
+            this.Arccos.Text = "Arccos";
+            this.Arccos.UseVisualStyleBackColor = true;
+            this.Arccos.Click += new System.EventHandler(this.Arccos_Click);
+            // 
+            // Arctan
+            // 
+            this.Arctan.Location = new System.Drawing.Point(227, 200);
+            this.Arctan.Name = "Arctan";
+            this.Arctan.Size = new System.Drawing.Size(45, 22);
+            this.Arctan.TabIndex = 20;
+            this.Arctan.Text = "Arctng";
+            this.Arctan.UseVisualStyleBackColor = true;
+            this.Arctan.Click += new System.EventHandler(this.Arctan_Click);
+            // 
+            // Arcctg
+            // 
+            this.Arcctg.Location = new System.Drawing.Point(227, 229);
+            this.Arcctg.Name = "Arcctg";
+            this.Arcctg.Size = new System.Drawing.Size(45, 23);
+            this.Arcctg.TabIndex = 21;
+            this.Arcctg.Text = "Arcctg";
+            this.Arcctg.UseVisualStyleBackColor = true;
+            this.Arcctg.Click += new System.EventHandler(this.Arcctg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.Arcctg);
+            this.Controls.Add(this.Arctan);
+            this.Controls.Add(this.Arccos);
+            this.Controls.Add(this.Arcsin);
             this.Controls.Add(this.Cotangent);
             this.Controls.Add(this.Tangent);
             this.Controls.Add(this.Cosine);
@@ -266,6 +314,10 @@
         private System.Windows.Forms.Button Cosine;
         private System.Windows.Forms.Button Tangent;
         private System.Windows.Forms.Button Cotangent;
+        private System.Windows.Forms.Button Arcsin;
+        private System.Windows.Forms.Button Arccos;
+        private System.Windows.Forms.Button Arctan;
+        private System.Windows.Forms.Button Arcctg;
     }
 }
 

@@ -63,6 +63,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryOperators\Substructor.cs" />
     <Compile Include="UnaryOperationFactory.cs" />
+    <Compile Include="UnaryOperators\Acosiner.cs" />
+    <Compile Include="UnaryOperators\Acotangenter.cs" />
+    <Compile Include="UnaryOperators\Asiner.cs" />
+    <Compile Include="UnaryOperators\Atangenter.cs" />
     <Compile Include="UnaryOperators\Cosiner.cs" />
     <Compile Include="UnaryOperators\Cotangenter.cs" />
     <Compile Include="UnaryOperators\IUnaryOperation.cs" />

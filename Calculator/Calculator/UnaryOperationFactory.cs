@@ -21,6 +21,14 @@ namespace Calculator
                     return new Tangenter();
                 case "cotangenter": 
                     return new Cotangenter();
+                case "Asiner":
+                    return new Asiner();
+                case "Acosiner":
+                    return new Acosiner();
+                case "Atangenter":
+                    return new Atangenter();
+                case "Acotangenter":
+                    return new Acotangenter();
                 default:
                     throw new ArgumentException("Неизвестный тип калькулятора", "name");
             }

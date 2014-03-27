@@ -91,6 +91,26 @@ namespace Calculator
         {
             UnaryCalculation("cotangenter");
         }
+
+        private void Arcsin_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("Asiner");
+        }
+
+        private void Arccos_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("Acosiner");
+        }
+
+        private void Arctan_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("Atangenter");
+        }
+
+        private void Arcctg_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("Acotangenter");
+        }
     }
 
 }
