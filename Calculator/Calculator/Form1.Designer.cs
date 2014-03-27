@@ -42,6 +42,10 @@
             this.Root = new System.Windows.Forms.Button();
             this.Logarithm = new System.Windows.Forms.Button();
             this.Radius = new System.Windows.Forms.Button();
+            this.Sine = new System.Windows.Forms.Button();
+            this.Cosine = new System.Windows.Forms.Button();
+            this.Tangent = new System.Windows.Forms.Button();
+            this.Cotangent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -172,11 +176,55 @@
             this.Radius.UseVisualStyleBackColor = true;
             this.Radius.Click += new System.EventHandler(this.Radius_Click);
             // 
+            // Sine
+            // 
+            this.Sine.Location = new System.Drawing.Point(181, 138);
+            this.Sine.Name = "Sine";
+            this.Sine.Size = new System.Drawing.Size(39, 24);
+            this.Sine.TabIndex = 14;
+            this.Sine.Text = "Sin";
+            this.Sine.UseVisualStyleBackColor = true;
+            this.Sine.Click += new System.EventHandler(this.Sine_Click);
+            // 
+            // Cosine
+            // 
+            this.Cosine.Location = new System.Drawing.Point(181, 168);
+            this.Cosine.Name = "Cosine";
+            this.Cosine.Size = new System.Drawing.Size(39, 24);
+            this.Cosine.TabIndex = 15;
+            this.Cosine.Text = "Cos";
+            this.Cosine.UseVisualStyleBackColor = true;
+            this.Cosine.Click += new System.EventHandler(this.Cosine_Click);
+            // 
+            // Tangent
+            // 
+            this.Tangent.Location = new System.Drawing.Point(181, 200);
+            this.Tangent.Name = "Tangent";
+            this.Tangent.Size = new System.Drawing.Size(39, 22);
+            this.Tangent.TabIndex = 16;
+            this.Tangent.Text = "Tan";
+            this.Tangent.UseVisualStyleBackColor = true;
+            this.Tangent.Click += new System.EventHandler(this.Tangent_Click);
+            // 
+            // Cotangent
+            // 
+            this.Cotangent.Location = new System.Drawing.Point(181, 228);
+            this.Cotangent.Name = "Cotangent";
+            this.Cotangent.Size = new System.Drawing.Size(39, 24);
+            this.Cotangent.TabIndex = 17;
+            this.Cotangent.Text = "Ctg";
+            this.Cotangent.UseVisualStyleBackColor = true;
+            this.Cotangent.Click += new System.EventHandler(this.Cotangent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.Cotangent);
+            this.Controls.Add(this.Tangent);
+            this.Controls.Add(this.Cosine);
+            this.Controls.Add(this.Sine);
             this.Controls.Add(this.Radius);
             this.Controls.Add(this.Logarithm);
             this.Controls.Add(this.Root);
@@ -214,6 +262,10 @@
         private System.Windows.Forms.Button Root;
         private System.Windows.Forms.Button Logarithm;
         private System.Windows.Forms.Button Radius;
+        private System.Windows.Forms.Button Sine;
+        private System.Windows.Forms.Button Cosine;
+        private System.Windows.Forms.Button Tangent;
+        private System.Windows.Forms.Button Cotangent;
     }
 }
 

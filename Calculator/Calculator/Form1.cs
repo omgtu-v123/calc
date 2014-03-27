@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.BinaryOperators;
+using Calculator.UnaryOperators;
 
 namespace Calculator
 {
@@ -21,7 +22,14 @@ namespace Calculator
         private void BinaryCalculation(string calculatorName)
         {
             IBinaryOperation calculator = BinaryOperationFactory.CreateCalculator(calculatorName);
-            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text), Convert.ToDouble(SecondArgument.Text));
+            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text),
+                Convert.ToDouble(SecondArgument.Text));
+        }
+
+        private void UnaryCalculation(string calculatorName)
+        {
+            IUnaryOperation calculator = UnaryOperationFactory.CreateCalculator(calculatorName);
+            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text));
         }
 
         private void Addition_Click(object sender, EventArgs e)
@@ -63,5 +71,26 @@ namespace Calculator
         {
             BinaryCalculation("Radius");
         }
+
+        private void Sine_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("siner");
+        }
+
+        private void Cosine_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("cosiner");
+        }
+
+        private void Tangent_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("tangenter");
+        }
+
+        private void Cotangent_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("cotangenter");
+        }
     }
+
 }
