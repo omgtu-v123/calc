@@ -52,6 +52,8 @@
             this.Arcctg = new System.Windows.Forms.Button();
             this.Sqrt = new System.Windows.Forms.Button();
             this.CubeSqrt = new System.Windows.Forms.Button();
+            this.NatLog = new System.Windows.Forms.Button();
+            this.Exp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -134,9 +136,9 @@
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(13, 229);
+            this.Division.Location = new System.Drawing.Point(13, 228);
             this.Division.Name = "Division";
-            this.Division.Size = new System.Drawing.Size(79, 23);
+            this.Division.Size = new System.Drawing.Size(79, 24);
             this.Division.TabIndex = 9;
             this.Division.Text = "Деление";
             this.Division.UseVisualStyleBackColor = true;
@@ -174,9 +176,9 @@
             // 
             // Radius
             // 
-            this.Radius.Location = new System.Drawing.Point(99, 229);
+            this.Radius.Location = new System.Drawing.Point(99, 228);
             this.Radius.Name = "Radius";
-            this.Radius.Size = new System.Drawing.Size(75, 23);
+            this.Radius.Size = new System.Drawing.Size(75, 24);
             this.Radius.TabIndex = 13;
             this.Radius.Text = "Радиус";
             this.Radius.UseVisualStyleBackColor = true;
@@ -254,9 +256,9 @@
             // 
             // Arcctg
             // 
-            this.Arcctg.Location = new System.Drawing.Point(227, 229);
+            this.Arcctg.Location = new System.Drawing.Point(227, 228);
             this.Arcctg.Name = "Arcctg";
-            this.Arcctg.Size = new System.Drawing.Size(62, 23);
+            this.Arcctg.Size = new System.Drawing.Size(62, 24);
             this.Arcctg.TabIndex = 21;
             this.Arcctg.Text = "Arcctg";
             this.Arcctg.UseVisualStyleBackColor = true;
@@ -282,11 +284,33 @@
             this.CubeSqrt.UseVisualStyleBackColor = true;
             this.CubeSqrt.Click += new System.EventHandler(this.CubeSqrt_Click);
             // 
+            // NatLog
+            // 
+            this.NatLog.Location = new System.Drawing.Point(295, 200);
+            this.NatLog.Name = "NatLog";
+            this.NatLog.Size = new System.Drawing.Size(54, 22);
+            this.NatLog.TabIndex = 24;
+            this.NatLog.Text = "ln";
+            this.NatLog.UseVisualStyleBackColor = true;
+            this.NatLog.Click += new System.EventHandler(this.NatLog_Click);
+            // 
+            // Exp
+            // 
+            this.Exp.Location = new System.Drawing.Point(296, 228);
+            this.Exp.Name = "Exp";
+            this.Exp.Size = new System.Drawing.Size(53, 24);
+            this.Exp.TabIndex = 25;
+            this.Exp.Text = "Exp";
+            this.Exp.UseVisualStyleBackColor = true;
+            this.Exp.Click += new System.EventHandler(this.Exp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 262);
+            this.Controls.Add(this.Exp);
+            this.Controls.Add(this.NatLog);
             this.Controls.Add(this.CubeSqrt);
             this.Controls.Add(this.Sqrt);
             this.Controls.Add(this.Arcctg);
@@ -344,6 +368,8 @@
         private System.Windows.Forms.Button Arcctg;
         private System.Windows.Forms.Button Sqrt;
         private System.Windows.Forms.Button CubeSqrt;
+        private System.Windows.Forms.Button NatLog;
+        private System.Windows.Forms.Button Exp;
     }
 }
 

@@ -33,6 +33,10 @@ namespace Calculator
                     return new Sqrt();
                 case "CubeSqrt":
                     return new CubeSqrt();
+                case "NatLog":
+                    return new NatLoger();
+                case "Exp":
+                    return new Exp();
                 default:
                     throw new ArgumentException("Неизвестный тип калькулятора", "name");
             }

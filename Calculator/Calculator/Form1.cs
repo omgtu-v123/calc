@@ -121,6 +121,16 @@ namespace Calculator
         {
             UnaryCalculation("CubeSqrt");
         }
+
+        private void NatLog_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("NatLog");
+        }
+
+        private void Exp_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("Exp");
+        }
     }
 
 }
