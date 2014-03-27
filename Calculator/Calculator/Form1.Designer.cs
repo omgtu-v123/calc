@@ -38,6 +38,10 @@
             this.Substraction = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
+            this.Root = new System.Windows.Forms.Button();
+            this.Logarithm = new System.Windows.Forms.Button();
+            this.Radius = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -128,11 +132,55 @@
             this.Division.UseVisualStyleBackColor = true;
             this.Division.Click += new System.EventHandler(this.Division_Click);
             // 
+            // Pow
+            // 
+            this.Pow.Location = new System.Drawing.Point(99, 139);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(75, 23);
+            this.Pow.TabIndex = 10;
+            this.Pow.Text = "Степень";
+            this.Pow.UseVisualStyleBackColor = true;
+            this.Pow.Click += new System.EventHandler(this.Sqrt_Click);
+            // 
+            // Root
+            // 
+            this.Root.Location = new System.Drawing.Point(99, 169);
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(75, 23);
+            this.Root.TabIndex = 11;
+            this.Root.Text = "Корень";
+            this.Root.UseVisualStyleBackColor = true;
+            this.Root.Click += new System.EventHandler(this.Root_Click);
+            // 
+            // Logarithm
+            // 
+            this.Logarithm.Location = new System.Drawing.Point(99, 199);
+            this.Logarithm.Name = "Logarithm";
+            this.Logarithm.Size = new System.Drawing.Size(75, 23);
+            this.Logarithm.TabIndex = 12;
+            this.Logarithm.Text = "Логарифм";
+            this.Logarithm.UseVisualStyleBackColor = true;
+            this.Logarithm.Click += new System.EventHandler(this.Logarithm_Click);
+            // 
+            // Radius
+            // 
+            this.Radius.Location = new System.Drawing.Point(99, 229);
+            this.Radius.Name = "Radius";
+            this.Radius.Size = new System.Drawing.Size(75, 23);
+            this.Radius.TabIndex = 13;
+            this.Radius.Text = "Радиус";
+            this.Radius.UseVisualStyleBackColor = true;
+            this.Radius.Click += new System.EventHandler(this.Radius_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.Radius);
+            this.Controls.Add(this.Logarithm);
+            this.Controls.Add(this.Root);
+            this.Controls.Add(this.Pow);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.Substraction);
@@ -162,6 +210,10 @@
         private System.Windows.Forms.Button Substraction;
         private System.Windows.Forms.Button Multiplication;
         private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button Pow;
+        private System.Windows.Forms.Button Root;
+        private System.Windows.Forms.Button Logarithm;
+        private System.Windows.Forms.Button Radius;
     }
 }
 

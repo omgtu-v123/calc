@@ -21,6 +21,14 @@ namespace Calculator
                     return new Multiplicator();
                 case "Divisioner" :
                     return new Divisioner();
+                case "Pow":
+                    return new Pow();
+                case "Root":
+                    return new Root();
+                case "Logarithm":
+                    return new Logarithm();
+                case "Radius":
+                    return new Radius();
                 default: 
                     throw new ArgumentException("Неизвестный тип калькулятора", "name");
             }

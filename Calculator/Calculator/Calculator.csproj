@@ -47,6 +47,10 @@
     <Compile Include="BinaryOperationFactory.cs" />
     <Compile Include="BinaryOperators\Additor.cs" />
     <Compile Include="BinaryOperators\Divisioner.cs" />
+    <Compile Include="BinaryOperators\Logarithm.cs" />
+    <Compile Include="BinaryOperators\Pow.cs" />
+    <Compile Include="BinaryOperators\Radius.cs" />
+    <Compile Include="BinaryOperators\Root.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +87,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

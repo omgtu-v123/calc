@@ -43,5 +43,25 @@ namespace Calculator
         {
             BinaryCalculation("Divisioner");
         }
+
+        private void Sqrt_Click(object sender, EventArgs e)
+        {
+            BinaryCalculation("Pow");
+        }
+
+        private void Root_Click(object sender, EventArgs e)
+        {
+            BinaryCalculation("Root");
+        }
+
+        private void Logarithm_Click(object sender, EventArgs e)
+        {
+            BinaryCalculation("Logarithm");
+        }
+
+        private void Radius_Click(object sender, EventArgs e)
+        {
+            BinaryCalculation("Radius");
+        }
     }
 }
