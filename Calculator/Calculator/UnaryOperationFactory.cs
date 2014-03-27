@@ -29,6 +29,10 @@ namespace Calculator
                     return new Atangenter();
                 case "Acotangenter":
                     return new Acotangenter();
+                case "Sqrt":
+                    return new Sqrt();
+                case "CubeSqrt":
+                    return new CubeSqrt();
                 default:
                     throw new ArgumentException("Неизвестный тип калькулятора", "name");
             }

@@ -50,27 +50,29 @@
             this.Arccos = new System.Windows.Forms.Button();
             this.Arctan = new System.Windows.Forms.Button();
             this.Arcctg = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.CubeSqrt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
             // 
             this.FirstArgument.Location = new System.Drawing.Point(13, 25);
             this.FirstArgument.Name = "FirstArgument";
-            this.FirstArgument.Size = new System.Drawing.Size(259, 20);
+            this.FirstArgument.Size = new System.Drawing.Size(336, 20);
             this.FirstArgument.TabIndex = 0;
             // 
             // SecondArgument
             // 
             this.SecondArgument.Location = new System.Drawing.Point(13, 70);
             this.SecondArgument.Name = "SecondArgument";
-            this.SecondArgument.Size = new System.Drawing.Size(259, 20);
+            this.SecondArgument.Size = new System.Drawing.Size(336, 20);
             this.SecondArgument.TabIndex = 1;
             // 
             // ResultField
             // 
             this.ResultField.Location = new System.Drawing.Point(13, 113);
             this.ResultField.Name = "ResultField";
-            this.ResultField.Size = new System.Drawing.Size(259, 20);
+            this.ResultField.Size = new System.Drawing.Size(336, 20);
             this.ResultField.TabIndex = 2;
             // 
             // label1
@@ -224,7 +226,7 @@
             // 
             this.Arcsin.Location = new System.Drawing.Point(227, 140);
             this.Arcsin.Name = "Arcsin";
-            this.Arcsin.Size = new System.Drawing.Size(45, 22);
+            this.Arcsin.Size = new System.Drawing.Size(62, 22);
             this.Arcsin.TabIndex = 18;
             this.Arcsin.Text = "Arcsin";
             this.Arcsin.UseVisualStyleBackColor = true;
@@ -234,7 +236,7 @@
             // 
             this.Arccos.Location = new System.Drawing.Point(227, 169);
             this.Arccos.Name = "Arccos";
-            this.Arccos.Size = new System.Drawing.Size(45, 23);
+            this.Arccos.Size = new System.Drawing.Size(62, 23);
             this.Arccos.TabIndex = 19;
             this.Arccos.Text = "Arccos";
             this.Arccos.UseVisualStyleBackColor = true;
@@ -244,7 +246,7 @@
             // 
             this.Arctan.Location = new System.Drawing.Point(227, 200);
             this.Arctan.Name = "Arctan";
-            this.Arctan.Size = new System.Drawing.Size(45, 22);
+            this.Arctan.Size = new System.Drawing.Size(62, 22);
             this.Arctan.TabIndex = 20;
             this.Arctan.Text = "Arctng";
             this.Arctan.UseVisualStyleBackColor = true;
@@ -254,17 +256,39 @@
             // 
             this.Arcctg.Location = new System.Drawing.Point(227, 229);
             this.Arcctg.Name = "Arcctg";
-            this.Arcctg.Size = new System.Drawing.Size(45, 23);
+            this.Arcctg.Size = new System.Drawing.Size(62, 23);
             this.Arcctg.TabIndex = 21;
             this.Arcctg.Text = "Arcctg";
             this.Arcctg.UseVisualStyleBackColor = true;
             this.Arcctg.Click += new System.EventHandler(this.Arcctg_Click);
             // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(295, 140);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(54, 22);
+            this.Sqrt.TabIndex = 22;
+            this.Sqrt.Text = "Sqrt";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.Sqrt_Click_1);
+            // 
+            // CubeSqrt
+            // 
+            this.CubeSqrt.Location = new System.Drawing.Point(296, 169);
+            this.CubeSqrt.Name = "CubeSqrt";
+            this.CubeSqrt.Size = new System.Drawing.Size(53, 23);
+            this.CubeSqrt.TabIndex = 23;
+            this.CubeSqrt.Text = "CSqrt";
+            this.CubeSqrt.UseVisualStyleBackColor = true;
+            this.CubeSqrt.Click += new System.EventHandler(this.CubeSqrt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(361, 262);
+            this.Controls.Add(this.CubeSqrt);
+            this.Controls.Add(this.Sqrt);
             this.Controls.Add(this.Arcctg);
             this.Controls.Add(this.Arctan);
             this.Controls.Add(this.Arccos);
@@ -318,6 +342,8 @@
         private System.Windows.Forms.Button Arccos;
         private System.Windows.Forms.Button Arctan;
         private System.Windows.Forms.Button Arcctg;
+        private System.Windows.Forms.Button Sqrt;
+        private System.Windows.Forms.Button CubeSqrt;
     }
 }
 

@@ -111,6 +111,16 @@ namespace Calculator
         {
             UnaryCalculation("Acotangenter");
         }
+
+        private void Sqrt_Click_1(object sender, EventArgs e)
+        {
+            UnaryCalculation("Sqrt");
+        }
+
+        private void CubeSqrt_Click(object sender, EventArgs e)
+        {
+            UnaryCalculation("CubeSqrt");
+        }
     }
 
 }

@@ -69,8 +69,10 @@
     <Compile Include="UnaryOperators\Atangenter.cs" />
     <Compile Include="UnaryOperators\Cosiner.cs" />
     <Compile Include="UnaryOperators\Cotangenter.cs" />
+    <Compile Include="UnaryOperators\CubeSqrt.cs" />
     <Compile Include="UnaryOperators\IUnaryOperation.cs" />
     <Compile Include="UnaryOperators\Siner.cs" />
+    <Compile Include="UnaryOperators\Sqrt.cs" />
     <Compile Include="UnaryOperators\Tangenter.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
