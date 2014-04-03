@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
 using Calculator.BinaryOperators;
+using NUnit.Framework;
 
 namespace Calculator.Tests.BinaryOperators
 {
     [TestFixture]
-    public class SubstructorTests
+    public class RadiusTests
     {
         [Test]
         public void CalculateTest()
         {
-            Substructor substructor = new Substructor();
-            Assert.AreEqual("0", substructor.Calculate(5, 5), "5-5 != 0");
+            Radius radius = new Radius();
+            Assert.AreEqual("5", radius.Calculate(3, 4), "sqrt(16+9) != 5");
         }
     }
 }

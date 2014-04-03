@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
 using Calculator.BinaryOperators;
+using NUnit.Framework;
 
 namespace Calculator.Tests.BinaryOperators
 {
     [TestFixture]
-    public class SubstructorTests
+    public class RootTests
     {
         [Test]
         public void CalculateTest()
         {
-            Substructor substructor = new Substructor();
-            Assert.AreEqual("0", substructor.Calculate(5, 5), "5-5 != 0");
+            Root root = new Root();
+            Assert.AreEqual("5", root.Calculate(25, 2), "25^0.5 != 5");
         }
     }
 }

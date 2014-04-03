@@ -44,6 +44,12 @@
   <ItemGroup>
     <Compile Include="BinaryOperators\AdditorTests.cs" />
     <Compile Include="BinaryOperators\DivisionerTests.cs" />
+    <Compile Include="BinaryOperators\LogarithmTests.cs" />
+    <Compile Include="BinaryOperators\MultiplicatorTests.cs" />
+    <Compile Include="BinaryOperators\PowTests.cs" />
+    <Compile Include="BinaryOperators\RadiusTests.cs" />
+    <Compile Include="BinaryOperators\RootTests.cs" />
+    <Compile Include="BinaryOperators\Substructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
