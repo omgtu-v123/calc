@@ -51,13 +51,15 @@
     <Compile Include="BinaryOperators\RootTests.cs" />
     <Compile Include="BinaryOperators\Substructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnaryOperators\AcosinerTest.cs" />
+    <Compile Include="UnaryOperators\Acotangenter.cs" />
+    <Compile Include="UnaryOperators\AsinerTest.cs" />
+    <Compile Include="UnaryOperators\Atangenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UnaryOperators\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">
       <Project>{40537bc7-aeaa-44be-be54-0bf729520f8c}</Project>
