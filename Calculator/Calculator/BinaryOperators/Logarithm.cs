@@ -2,7 +2,7 @@
 
 namespace Calculator.BinaryOperators
 {
-    class Logarithm : IBinaryOperation
+    public class Logarithm : IBinaryOperation
     {
         public string Calculate(double first, double second)
         {

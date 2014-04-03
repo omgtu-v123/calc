@@ -2,7 +2,7 @@
 
 namespace Calculator.BinaryOperators
 {
-    class Radius : IBinaryOperation
+    public class Radius : IBinaryOperation
     {
         public string Calculate(double first, double second)
         {
