@@ -5,9 +5,9 @@ namespace Calculator.BinaryOperators
 {
     public class Pow : IBinaryOperation
     {
-        public string Calculate(double first, double second)
+        public double Calculate(double first, double second)
         {
-            return Math.Pow(first, second).ToString();
+            return Math.Pow(first, second);
         }
     }
 }

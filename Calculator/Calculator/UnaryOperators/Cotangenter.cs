@@ -9,9 +9,9 @@ namespace Calculator.UnaryOperators
 {
     public class Cotangenter : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return (1/Math.Tan(argument)).ToString();
+            return (1/Math.Tan(argument));
         }
     }
 }

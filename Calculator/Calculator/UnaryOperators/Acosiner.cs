@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Acosiner : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Acos(argument).ToString();
+            return Math.Acos(argument);
         }
     }
 }

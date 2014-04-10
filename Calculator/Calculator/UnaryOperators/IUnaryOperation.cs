@@ -8,6 +8,6 @@ namespace Calculator.UnaryOperators
 {
     public interface IUnaryOperation
     {
-         string Calculate(double argument);
+         double Calculate(double argument);
     }
 }

@@ -17,7 +17,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateTest()
             {
                 Sqrt sqrt = new Sqrt();
-                Assert.AreEqual("3", sqrt.Calculate(9), "sqrt (9) != 3");
+                Assert.AreEqual(3, sqrt.Calculate(9), "sqrt (9) != 3");
             }
         }
     }

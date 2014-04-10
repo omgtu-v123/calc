@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Logarithm logarithm = new Logarithm();
-            Assert.AreEqual("3", logarithm.Calculate(8, 2), "log(2,8) != 3");
+            Assert.AreEqual(3, logarithm.Calculate(8, 2), "log(2,8) != 3");
         }
     }
 }

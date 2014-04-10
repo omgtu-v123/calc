@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Siner : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Sin(argument).ToString();
+            return Math.Sin(argument);
         }
     }
 }

@@ -9,9 +9,9 @@ namespace Calculator.UnaryOperators
 {
     public class Asiner : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Asin(argument).ToString();
+            return Math.Asin(argument);
         }
     }
 }

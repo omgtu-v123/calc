@@ -17,7 +17,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateTest()
             {
                 Atangenter atangenter = new Atangenter();
-                Assert.AreEqual("0", atangenter.Calculate(0), "arctg 0 != 0");
+                Assert.AreEqual(0, atangenter.Calculate(0), "arctg 0 != 0");
             }
         }
     }

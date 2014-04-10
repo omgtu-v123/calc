@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Pow pow = new Pow();
-            Assert.AreEqual("25", pow.Calculate(5, 2), "5^2 != 25");
+            Assert.AreEqual(25, pow.Calculate(5, 2), "5^2 != 25");
         }
     }
 }

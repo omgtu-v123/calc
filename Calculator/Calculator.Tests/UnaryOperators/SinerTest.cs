@@ -8,16 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.UnaryOperators
 {
-    public class CubeSqrtTest
+    public class SinerTest
     {
         [TestFixture]
-        public class CubeSqrtTests
+        public class SinerTests
         {
             [Test]
             public void CalculateTest()
             {
-                CubeSqrt cubesqrt = new CubeSqrt();
-                Assert.AreEqual(3, cubesqrt.Calculate(27), "cube sqrt (27) != 3");
+                Siner siner = new Siner();
+                Assert.AreEqual(0, siner.Calculate(0), "siner != 0");
             }
         }
     }

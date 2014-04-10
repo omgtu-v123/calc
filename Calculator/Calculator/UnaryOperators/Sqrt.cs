@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Sqrt : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Sqrt(argument).ToString();
+            return Math.Sqrt(argument);
         }
     }
 }

@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Exp : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Exp(argument).ToString();
+            return Math.Exp(argument);
         }
     }
 }

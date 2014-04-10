@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Additor additor = new Additor();
-            Assert.AreEqual("10", additor.Calculate(5,5), "5 + 5 != 10");
+            Assert.AreEqual(10, additor.Calculate(5,5), "5 + 5 != 10");
         }
     }
 }

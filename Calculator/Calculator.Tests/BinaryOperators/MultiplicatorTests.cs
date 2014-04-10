@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Multiplicator multiplicator = new Multiplicator();
-            Assert.AreEqual("25", multiplicator.Calculate(5, 5), "5*5 != 25");
+            Assert.AreEqual(25, multiplicator.Calculate(5, 5), "5*5 != 25");
         }
     }
 }

@@ -55,8 +55,12 @@
     <Compile Include="UnaryOperators\Acotangenter.cs" />
     <Compile Include="UnaryOperators\AsinerTest.cs" />
     <Compile Include="UnaryOperators\Atangenter.cs" />
+    <Compile Include="UnaryOperators\CosinerTests.cs" />
+    <Compile Include="UnaryOperators\CotangenterTests.cs" />
     <Compile Include="UnaryOperators\CubeSqrtTest.cs" />
-    <Compile Include="UnaryOperators\Sqrt.cs" />
+    <Compile Include="UnaryOperators\SinerTest.cs" />
+    <Compile Include="UnaryOperators\SqrtTests.cs" />
+    <Compile Include="UnaryOperators\TangenterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

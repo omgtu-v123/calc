@@ -18,7 +18,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateTest()
             {
                 Acosiner acosiner = new Acosiner();
-                Assert.AreEqual("1", acosiner.Calculate(0), "cos 0 != 1");
+                Assert.AreEqual(1.5708, acosiner.Calculate(0), 0.0001, "acos 0 != 1,5707963267949");
             }
         }
     }

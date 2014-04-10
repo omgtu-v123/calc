@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class CubeSqrt : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Pow(argument,1.0/3).ToString();
+            return Math.Pow(argument,1.0/3);
         }
     }
 }

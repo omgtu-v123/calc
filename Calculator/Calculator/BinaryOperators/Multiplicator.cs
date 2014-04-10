@@ -2,9 +2,9 @@
 {
     public class Multiplicator : IBinaryOperation
     {
-        public string Calculate(double first, double second)
+        public double Calculate(double first, double second)
         {
-            return (first * second).ToString();
+            return (first * second);
         }
     }
 }

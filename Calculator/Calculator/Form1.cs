@@ -23,13 +23,13 @@ namespace Calculator
         {
             IBinaryOperation calculator = BinaryOperationFactory.CreateCalculator(calculatorName);
             ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text),
-                Convert.ToDouble(SecondArgument.Text));
+                Convert.ToDouble(SecondArgument.Text)).ToString();
         }
 
         private void UnaryCalculation(string calculatorName)
         {
             IUnaryOperation calculator = UnaryOperationFactory.CreateCalculator(calculatorName);
-            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text));
+            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text)).ToString();
         }
 
         private void Addition_Click(object sender, EventArgs e)

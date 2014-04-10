@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Root root = new Root();
-            Assert.AreEqual("5", root.Calculate(25, 2), "25^0.5 != 5");
+            Assert.AreEqual(5, root.Calculate(25, 2), "25^0.5 != 5");
         }
     }
 }

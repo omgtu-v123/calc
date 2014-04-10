@@ -8,16 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.UnaryOperators
 {
-    public class CubeSqrtTest
+    public class CotangenterTest
     {
         [TestFixture]
-        public class CubeSqrtTests
+        public class CotangenterTests
         {
             [Test]
             public void CalculateTest()
             {
-                CubeSqrt cubesqrt = new CubeSqrt();
-                Assert.AreEqual(3, cubesqrt.Calculate(27), "cube sqrt (27) != 3");
+                Cotangenter cotangenter = new Cotangenter();
+                Assert.AreEqual(-0.2958, cotangenter.Calculate(5), 0.0001, "cotangenter != 0");
             }
         }
     }

@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Atangenter : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Atan(argument).ToString();
+            return Math.Atan(argument);
         }
     }
 }

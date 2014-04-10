@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class Cosiner : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Cos(argument).ToString();
+            return Math.Cos(argument);
         }
     }
 }

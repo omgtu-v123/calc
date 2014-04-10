@@ -8,9 +8,9 @@ namespace Calculator.UnaryOperators
 {
     public class NatLoger : IUnaryOperation
     {
-        public string Calculate(double argument)
+        public double Calculate(double argument)
         {
-            return Math.Log(argument, Math.E).ToString();
+            return Math.Log(argument, Math.E);
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IBinaryOperation
     {
-        string Calculate(double first, double second);
+        double Calculate(double first, double second);
     }
 }

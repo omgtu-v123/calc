@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Divisioner divisioner = new Divisioner();
-            Assert.AreEqual("1", divisioner.Calculate(5,5), "5/5 != 1");
+            Assert.AreEqual(1, divisioner.Calculate(5,5), "5/5 != 1");
         }
     }
 }

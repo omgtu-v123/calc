@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Radius radius = new Radius();
-            Assert.AreEqual("5", radius.Calculate(3, 4), "sqrt(16+9) != 5");
+            Assert.AreEqual(5, radius.Calculate(3, 4), "sqrt(16+9) != 5");
         }
     }
 }

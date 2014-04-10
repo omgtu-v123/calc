@@ -17,7 +17,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateTest()
             {
                 Asiner asiner = new Asiner();
-                Assert.AreEqual("0", asiner.Calculate(0), "cos 0 != 0");
+                Assert.AreEqual(0, asiner.Calculate(0), "asiner 0 != 0");
             }
         }
     }

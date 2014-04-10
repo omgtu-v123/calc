@@ -15,7 +15,7 @@ namespace Calculator.Tests.BinaryOperators
         public void CalculateTest()
         {
             Substructor substructor = new Substructor();
-            Assert.AreEqual("0", substructor.Calculate(5, 5), "5-5 != 0");
+            Assert.AreEqual(0, substructor.Calculate(5, 5), "5-5 != 0");
         }
     }
 }
