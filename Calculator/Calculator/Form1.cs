@@ -21,15 +21,31 @@ namespace Calculator
 
         private void BinaryCalculation(string calculatorName)
         {
-            IBinaryOperation calculator = BinaryOperationFactory.CreateCalculator(calculatorName);
-            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text),
-                Convert.ToDouble(SecondArgument.Text)).ToString();
+            try
+            {
+                IBinaryOperation calculator = BinaryOperationFactory.CreateCalculator(calculatorName);
+                ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text),
+                    Convert.ToDouble(SecondArgument.Text)).ToString();
+            }
+            catch (Exception e)
+            {
+                ResultField.Text = e.Message;
+            }
+            
         }
 
         private void UnaryCalculation(string calculatorName)
         {
-            IUnaryOperation calculator = UnaryOperationFactory.CreateCalculator(calculatorName);
-            ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text)).ToString();
+            try
+            {
+                IUnaryOperation calculator = UnaryOperationFactory.CreateCalculator(calculatorName);
+                ResultField.Text = calculator.Calculate(Convert.ToDouble(FirstArgument.Text)).ToString();
+            }
+            catch (Exception e)
+            {
+                ResultField.Text = e.Message;
+            }
+          
         }
 
         private void Addition_Click(object sender, EventArgs e)

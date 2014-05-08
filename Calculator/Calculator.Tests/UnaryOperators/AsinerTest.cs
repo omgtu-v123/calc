@@ -19,6 +19,15 @@ namespace Calculator.Tests.UnaryOperators
                 Asiner asiner = new Asiner();
                 Assert.AreEqual(0, asiner.Calculate(0), "asiner 0 != 0");
             }
+
+            [Test]
+            [ExpectedException(typeof(Exception))]
+            public void CalculateFailTest()
+            {
+                Asiner asiner = new Asiner();
+                double result = asiner.Calculate(1.1);
+            }
+
         }
     }
 }

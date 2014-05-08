@@ -10,6 +10,10 @@ namespace Calculator.UnaryOperators
     {
         public double Calculate(double argument)
         {
+            if (argument < -Math.PI/2 || argument > Math.PI/2)
+            {
+                throw new Exception("Значение арктангенса должно лежать в пределах от -ПИ до ПИ");
+            }
             return Math.Atan(argument);
         }
     }
