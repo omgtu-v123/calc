@@ -19,6 +19,13 @@ namespace Calculator.Tests.UnaryOperators
                 Acotangenter acotangenter = new Acotangenter();
                 Assert.AreEqual(1.5708, acotangenter.Calculate(0), 0.0001, "arcctg 0 != 1,5707963267949");
             }
+            [Test]
+            [ExpectedException(typeof(Exception))]
+            public void CalculateFailTest()
+            {
+                Acotangenter acotangenter = new Acotangenter();
+                double result = acotangenter.Calculate(Math.PI + 1);
+            }
         }
     }
 }

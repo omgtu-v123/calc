@@ -12,7 +12,7 @@ namespace Calculator.UnaryOperators
         {
             if (Math.Abs(argument - Math.PI / 2) < 0.0001)
             {
-                throw new Exception("Значение аргумента арктангенса не может быть ПИ");
+                throw new Exception("Значение аргумента тангенса не может быть ПИ");
             }
             return Math.Tan(argument);
         }

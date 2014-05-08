@@ -19,6 +19,13 @@ namespace Calculator.Tests.UnaryOperators
                 Tangenter tangenter = new Tangenter();
                 Assert.AreEqual(-3.3805, tangenter.Calculate(5), 0.0001, "tangenter != 0");
             }
+            [Test]
+            [ExpectedException(typeof(Exception))]
+            public void CalculateFailTest()
+            {
+                Tangenter tangenter = new Tangenter();
+                double result = tangenter.Calculate(Math.PI / 2);
+            }
         }
     }
 }

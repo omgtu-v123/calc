@@ -19,6 +19,13 @@ namespace Calculator.Tests.UnaryOperators
                 Atangenter atangenter = new Atangenter();
                 Assert.AreEqual(0, atangenter.Calculate(0), "arctg 0 != 0");
             }
+            [Test]
+            [ExpectedException(typeof(Exception))]
+            public void CalculateFailTest()
+            {
+                Atangenter atangenter = new Atangenter();
+                double result = atangenter.Calculate(Math.PI + 1);
+            }
         }
     }
 }

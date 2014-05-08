@@ -20,6 +20,13 @@ namespace Calculator.Tests.UnaryOperators
                 Acosiner acosiner = new Acosiner();
                 Assert.AreEqual(1.5708, acosiner.Calculate(0), 0.0001, "acos 0 != 1,5707963267949");
             }
+            [Test]
+            [ExpectedException(typeof(Exception))]
+            public void CalculateFailTest()
+            {
+                Acosiner acosiner = new Acosiner();
+                double result = acosiner.Calculate(1.1);
+            }
         }
     }
 }
