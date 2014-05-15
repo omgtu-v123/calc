@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.BinaryOperators;
+using Calculator.SortingOperations;
 using Calculator.UnaryOperators;
 
 namespace Calculator
@@ -19,6 +20,23 @@ namespace Calculator
             InitializeComponent();
         }
 
+        private void SortingCalculation(string calculatorName)
+        {
+            string[] stringArray = FirstArgument.Text.Split(' ');
+            int[] intArray = new int[stringArray.Length];
+            for (int i = 0; i < stringArray.Length; i++)
+            {
+                intArray[i] = Convert.ToInt32(stringArray[i]);
+            }
+            ISortingOperation calculator = SortingOperationsFactory.CreateCalculator(calculatorName);
+            int[] result = calculator.SortingCalculate(intArray);
+            string stringResult = string.Empty;
+            for (int i = 0; i < result.Length; i++)
+            {
+                stringResult += result[i] + " ";
+            }
+            ResultField.Text = stringResult;
+        }
         private void BinaryCalculation(string calculatorName)
         {
             try
@@ -146,6 +164,16 @@ namespace Calculator
         private void Exp_Click(object sender, EventArgs e)
         {
             UnaryCalculation("Exp");
+        }
+
+        private void DownSorting_Click(object sender, EventArgs e)
+        {
+            SortingCalculation("");
+        }
+
+        private void UpSorting_Click(object sender, EventArgs e)
+        {
+            SortingCalculation("");
         }
     }
 

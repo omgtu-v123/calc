@@ -13,7 +13,7 @@ namespace Calculator.UnaryOperators
         {
             if (argument < 0 || argument > Math.PI)
             {
-                throw new Exception("Значение арктангенса должно лежать в пределах от 0 до ПИ");
+                throw new Exception("Значение котангенса должно лежать в пределах от 0 до ПИ");
             }
             return (1/Math.Tan(argument));
         }

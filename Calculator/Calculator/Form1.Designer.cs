@@ -54,6 +54,9 @@
             this.CubeSqrt = new System.Windows.Forms.Button();
             this.NatLog = new System.Windows.Forms.Button();
             this.Exp = new System.Windows.Forms.Button();
+            this.UpSorting = new System.Windows.Forms.Button();
+            this.DownSorting = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -304,11 +307,43 @@
             this.Exp.UseVisualStyleBackColor = true;
             this.Exp.Click += new System.EventHandler(this.Exp_Click);
             // 
+            // UpSorting
+            // 
+            this.UpSorting.Location = new System.Drawing.Point(13, 259);
+            this.UpSorting.Name = "UpSorting";
+            this.UpSorting.Size = new System.Drawing.Size(103, 23);
+            this.UpSorting.TabIndex = 26;
+            this.UpSorting.Text = "Sort1";
+            this.UpSorting.UseVisualStyleBackColor = true;
+            this.UpSorting.Click += new System.EventHandler(this.UpSorting_Click);
+            // 
+            // DownSorting
+            // 
+            this.DownSorting.Location = new System.Drawing.Point(131, 259);
+            this.DownSorting.Name = "DownSorting";
+            this.DownSorting.Size = new System.Drawing.Size(103, 23);
+            this.DownSorting.TabIndex = 27;
+            this.DownSorting.Text = "Sort2";
+            this.DownSorting.UseVisualStyleBackColor = true;
+            this.DownSorting.Click += new System.EventHandler(this.DownSorting_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(251, 259);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Sort3";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 262);
+            this.ClientSize = new System.Drawing.Size(361, 288);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DownSorting);
+            this.Controls.Add(this.UpSorting);
             this.Controls.Add(this.Exp);
             this.Controls.Add(this.NatLog);
             this.Controls.Add(this.CubeSqrt);
@@ -370,6 +405,9 @@
         private System.Windows.Forms.Button CubeSqrt;
         private System.Windows.Forms.Button NatLog;
         private System.Windows.Forms.Button Exp;
+        private System.Windows.Forms.Button UpSorting;
+        private System.Windows.Forms.Button DownSorting;
+        private System.Windows.Forms.Button button1;
     }
 }
 
