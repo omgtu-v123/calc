@@ -11,5 +11,14 @@ namespace Calculator
     public static class SortingOperationsFactory
     {
         public static ISortingOperation CreateCalculator(string name)
+        {
+            switch (name)
+            {
+                case "Bubble": 
+                    return new BubbleMethod();
+                default:
+                    throw new ArgumentException("Неизвестный тип сортировки", "name");
+            }
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateTest()
             {
                 Cotangenter cotangenter = new Cotangenter();
-                Assert.AreEqual(-0.2958, cotangenter.Calculate(5), 0.0001, "cotangenter != 0");
+                Assert.AreEqual(-0.4576575544, cotangenter.Calculate(2), 0.0001, "cotangenter != 0");
             }
             [Test]
             [ExpectedException(typeof(Exception))]

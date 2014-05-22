@@ -17,5 +17,12 @@ namespace Calculator.Tests.BinaryOperators
             Divisioner divisioner = new Divisioner();
             Assert.AreEqual(1, divisioner.Calculate(5,5), "5/5 != 1");
         }
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void CalculateFailTest()
+        {
+            Divisioner divisioner = new Divisioner();
+            double result = divisioner.Calculate(1, 0);
+        }
     }
 }

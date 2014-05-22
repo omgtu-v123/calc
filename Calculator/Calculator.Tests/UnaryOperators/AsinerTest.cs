@@ -25,7 +25,7 @@ namespace Calculator.Tests.UnaryOperators
             public void CalculateFailTest()
             {
                 Asiner asiner = new Asiner();
-                double result = asiner.Calculate(1.1);
+                double result = asiner.Calculate(256);
             }
 
         }

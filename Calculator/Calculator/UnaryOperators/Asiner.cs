@@ -11,6 +11,10 @@ namespace Calculator.UnaryOperators
     {
         public double Calculate(double argument)
         {
+            if (argument < -Math.PI/2 || argument > Math.PI/2)
+            {
+                throw new Exception("Значение арксинуса должно лежать в пределах от -ПИ/2 до ПИ/2");
+            }
             return Math.Asin(argument);
         }
     }

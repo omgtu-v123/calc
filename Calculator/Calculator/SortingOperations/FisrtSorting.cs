@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.SortingOperations
 {
-    public interface ISortingOperation
+    class FisrtSorting
     {
-        int[] SortingCalculate(int[] argument);
     }
 }

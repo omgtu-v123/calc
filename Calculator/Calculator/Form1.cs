@@ -173,7 +173,7 @@ namespace Calculator
 
         private void UpSorting_Click(object sender, EventArgs e)
         {
-            SortingCalculation("");
+            SortingCalculation("Bubble");
         }
     }
 
