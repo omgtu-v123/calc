@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortingOperations\BubbleMethodTests.cs" />
     <Compile Include="SortingOperations\ChoseMethodTest.cs" />
+    <Compile Include="SortingOperations\InsertMethodTests.cs" />
     <Compile Include="UnaryOperators\AcosinerTest.cs" />
     <Compile Include="UnaryOperators\Acotangenter.cs" />
     <Compile Include="UnaryOperators\AsinerTest.cs" />
