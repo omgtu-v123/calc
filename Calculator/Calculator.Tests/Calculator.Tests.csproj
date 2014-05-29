@@ -51,6 +51,7 @@
     <Compile Include="BinaryOperators\RootTests.cs" />
     <Compile Include="BinaryOperators\Substructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortingOperations\BubbleMethodTests.cs" />
     <Compile Include="UnaryOperators\AcosinerTest.cs" />
     <Compile Include="UnaryOperators\Acotangenter.cs" />
     <Compile Include="UnaryOperators\AsinerTest.cs" />
