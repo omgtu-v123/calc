@@ -16,6 +16,8 @@ namespace Calculator
             {
                 case "Bubble": 
                     return new BubbleMethod();
+                case "Chose":
+                    return new ChoseMethod();
                 default:
                     throw new ArgumentException("Неизвестный тип сортировки", "name");
             }

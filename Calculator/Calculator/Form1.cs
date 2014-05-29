@@ -168,7 +168,7 @@ namespace Calculator
 
         private void DownSorting_Click(object sender, EventArgs e)
         {
-            SortingCalculation("");
+            SortingCalculation("Chose");
         }
 
         private void UpSorting_Click(object sender, EventArgs e)

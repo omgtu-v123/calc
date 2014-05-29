@@ -64,6 +64,7 @@
     <Compile Include="BinaryOperators\Substructor.cs" />
     <Compile Include="SortingOperationsFactory.cs" />
     <Compile Include="SortingOperations\BubbleMethod.cs" />
+    <Compile Include="SortingOperations\ChoseMethod.cs" />
     <Compile Include="SortingOperations\ISortingOperation.cs" />
     <Compile Include="UnaryOperationFactory.cs" />
     <Compile Include="UnaryOperators\Acosiner.cs" />
